@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	font-family: "baloo_paaji_2regular";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "baloo_paaji_2regular";
+	src: url("./components/assets/fonts/baloopaaji2-regular-webfont.woff2")
+			format("woff2"),
+		url("./components/assets/fonts/baloopaaji2-regular-webfont.woff")
+			format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.container {
+	background: #f8f8f8;
+	width: 50%;
+	margin: 0 auto;
+	border-left: 1px dotted #868585;
+	border-right: 1px dotted #868585;
+	text-align: center;
+	padding: 20px 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+	color: #454545;
+	text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+h3 {
+	text-align: left;
+	color: hsl(242deg 94% 13%);
+	font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+	display: inline-flex;
+	align-items: center;
+}
+form {
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #454545;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.img-box {
+	width: 7%;
+	padding: 10px;
+}
+div.img-box img {
+	display: block;
+	width: 100%;
+}
+input.add {
+	width: 70%;
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+input[type="radio"] {
+	margin-right: 15px;
+}
+button {
+	width: 20%;
+	background: hsl(242deg 94% 13%);
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+li {
+	width: 90%;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ul.done li {
+	color: hsl(163deg 60% 55%);
+}
+a {
+	cursor: pointer;
+}
+a.delete {
+	display: inline-block;
+}
+a.delete img {
+	display: block;
+	width: 100%;
+}
+a.tick {
+	border: 1px solid hsl(163deg 60% 55%);
+	border-radius: 50%;
+	display: inline-block;
+	padding: 5px;
+	margin-right: 15px;
+}
+a.tick img {
+	display: block;
+	width: 100%;
+}
+a.revert {
+	margin-right: 20px;
 }
